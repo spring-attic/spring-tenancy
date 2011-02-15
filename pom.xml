@@ -4,25 +4,37 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework</groupId>
 	<artifactId>spring-tenancy</artifactId>
-	<version>3.0.5.RELEASE</version>
+	<version>3.0.6.SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>multi tenant framework</name>
+	
+	<properties>
+		<spring.framework.version>3.0.5.RELEASE</spring.framework.version>
+	</properties>
+	
+	<distributionManagement>
+    <repository>
+      	<id>code2cloud-spring-tenacy</id>
+		<name>Spring Tenancy Code2Cloud Repo</name>
+		<url>dav:http://code2cloud.tasktop.com/alm/s/spring-tenancy/maven/</url>
+    </repository>
+  </distributionManagement>
 	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${project.version}</version>
+			<version>${spring.framework.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${project.version}</version>
+			<version>${spring.framework.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>${project.version}</version>
+			<version>${spring.framework.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
