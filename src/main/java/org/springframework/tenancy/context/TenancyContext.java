@@ -1,4 +1,4 @@
-/* Copyright 2010 Tasktop Technologies
+/* Copyright 2010, 2011 Tasktop Technologies
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,8 @@
 
 package org.springframework.tenancy.context;
 
+import java.io.Serializable;
+
 import org.springframework.tenancy.core.Tenant;
 
 /**
@@ -22,7 +24,7 @@ import org.springframework.tenancy.core.Tenant;
  * 
  * @author Clint Morgan
  */
-public interface TenancyContext {
+public interface TenancyContext extends Serializable {
 	/**
 	 * Obtains the current tenant.
 	 * 

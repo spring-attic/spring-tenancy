@@ -1,4 +1,4 @@
-/* Copyright 2010 Tasktop Technologies
+/* Copyright 2010, 2011 Tasktop Technologies
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,13 +15,15 @@
 
 package org.springframework.tenancy.core;
 
+import java.io.Serializable;
+
 /**
  * Identifies a tenant in a multi-tenanted architecture, where a tenant is used to identify a logical partition of
  * application data and/or configuration.
  * 
  * @author Clint Morgan
  */
-public interface Tenant {
+public interface Tenant extends Serializable {
 
 	/**
 	 * Get the identity of the tenant.

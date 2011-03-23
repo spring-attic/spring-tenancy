@@ -1,4 +1,4 @@
-/* Copyright 2010 Tasktop Technologies
+/* Copyright 2010, 2011 Tasktop Technologies
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,6 +25,8 @@ import org.springframework.tenancy.core.Tenant;
  */
 public class DefaultTenant implements Tenant {
 
+	private static final long serialVersionUID = 1L;
+	
 	private Object identity;
 	private Object data;
 
@@ -73,5 +75,10 @@ public class DefaultTenant implements Tenant {
 			return super.hashCode();
 		}
 		return identity.hashCode();
+	}
+
+	@Override
+	public String toString() {
+		return "DefaultTenant [identity=" + identity + ", data=" + data + "]";
 	}
 }
