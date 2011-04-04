@@ -1,4 +1,5 @@
-/* Copyright 2010 Tasktop Technologies
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 SpringSource, a division of VMware 
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -11,7 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *
+ * Contributors:
+ *     Tasktop Technologies Inc. - initial API and implementation
+ *******************************************************************************/
 
 package org.springframework.tenancy.web;
 
@@ -35,7 +39,7 @@ import org.springframework.web.filter.GenericFilterBean;
  * Responsible for setting and removing the {@link TenancyContext tenancy context} for the scope of every request. This
  * filter should be installed before any components that need access to the {@link TenancyContext tenancy context}.
  * 
- * @author Clint Morgan
+ * @author Clint Morgan (Tasktop Technologies Inc.)
  * 
  * @see TenancyContext
  * @see TenancyContextHolder
