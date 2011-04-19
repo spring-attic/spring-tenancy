@@ -99,6 +99,9 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 			Statement s = con.createStatement();
 			try {
 				s.execute(language.switchDatabase(databaseName));
+			} catch (SQLException e) { 
+				con.close();
+				throw e;
 			} finally {
 				s.close();
 			}
