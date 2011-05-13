@@ -19,7 +19,7 @@
 				<repository>
 					<id>spring-tenancy</id>
 					<name>Spring Tenancy</name>
-					<url>http://code2cloud.tasktop.com/alm/s/spring-tenancy/maven/</url>
+					<url>https://qcode.cloudfoundry.com/alm/s/spring-tenancy/maven/</url>
 				</repository>
 				<repository>
 					<id>EclipseLink Repo</id>
@@ -34,7 +34,7 @@
 		<repository>
 			<id>code2cloud-spring-tenacy</id>
 			<name>Spring Tenancy Code2Cloud Repo</name>
-			<url>dav:http://code2cloud.tasktop.com/alm/s/spring-tenancy/maven/</url>
+			<url>dav:https://qcode.cloudfoundry.com/alm/s/spring-tenancy/maven/</url>
 		</repository>
 	</distributionManagement>
 
