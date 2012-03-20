@@ -30,6 +30,14 @@
 		</profile>
 	</profiles>
 
+	<repositories>
+		<repository>
+			<id>EclipseLink Repo</id>
+			<name>EclipseLink Repository</name>
+			<url>http://download.eclipse.org/rt/eclipselink/maven.repo</url>
+		</repository>
+	</repositories>
+
 	<distributionManagement>
 		<repository>
 			<id>code2cloud-spring-tenacy</id>
