@@ -40,9 +40,9 @@
 
 	<distributionManagement>
 		<repository>
-			<id>code2cloud-spring-tenacy</id>
+			<id>code2cloud-spring-tenancy</id>
 			<name>Spring Tenancy Code2Cloud Repo</name>
-			<url>dav:https://qcode.cloudfoundry.com/alm/s/spring-tenancy/maven/</url>
+			<url>dav:https://r.tasktop.com.com/s/spring-tenancy/maven/</url>
 		</repository>
 	</distributionManagement>
 
