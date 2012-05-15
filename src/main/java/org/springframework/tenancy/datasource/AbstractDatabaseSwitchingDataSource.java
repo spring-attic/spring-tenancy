@@ -35,7 +35,7 @@ import javax.sql.DataSource;
 public abstract class AbstractDatabaseSwitchingDataSource implements DataSource {
 
 	public static enum Language {
-		HSQL("SET SCHEMA ", "'"), MYSQL("USE ", "`"), ORACLE("ALTER SESSION SET CURRENT_SCHEMA=", "'");
+		HSQL("SET SCHEMA ", "'"), MYSQL("USE ", "`"), ORACLE("ALTER SESSION SET CURRENT_SCHEMA=", "");
 
 		private final String switchCommand;
 		private final String quoteChar;
@@ -46,7 +46,13 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 		}
 
 		public String switchDatabase(String dbName) {
-			return switchCommand + quoteChar + dbName + quoteChar + ";";
+			String query = switchCommand + quoteChar + dbName + quoteChar; 
+			if(this.name().equals(ORACLE.name())) {
+				return query; 				
+			}
+			else {
+				return query + ";"; 								
+			}
 		}
 
 	};
