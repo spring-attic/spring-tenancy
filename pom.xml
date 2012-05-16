@@ -42,7 +42,7 @@
 		<repository>
 			<id>code2cloud-spring-tenancy</id>
 			<name>Spring Tenancy Code2Cloud Repo</name>
-			<url>dav:https://r.tasktop.com.com/s/spring-tenancy/maven/</url>
+			<url>dav:https://r.tasktop.com/s/spring-tenancy/maven</url>
 		</repository>
 	</distributionManagement>
 
@@ -150,6 +150,14 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			   <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <tagBase>https://svn.apache.org/repos/asf/maven/components/releases</tagBase>
+        </configuration>
+      </plugin>
 		</plugins>
 		<extensions>
 			<extension>
