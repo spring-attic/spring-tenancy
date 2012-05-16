@@ -48,13 +48,12 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 		public String switchDatabase(String dbName) {
 			String query = switchCommand + quoteChar + dbName + quoteChar; 
 			if(this.name().equals(ORACLE.name())) {
-				return query; 				
+				return query;
 			}
 			else {
-				return query + ";"; 								
+				return query + ";";
 			}
 		}
-
 	};
 
 	private DataSource wrappedDataSource;
