@@ -19,7 +19,7 @@
 				<repository>
 					<id>spring-tenancy</id>
 					<name>Spring Tenancy</name>
-					<url>https://qcode.cloudfoundry.com/alm/s/spring-tenancy/maven/</url>
+					<url>https://r.tasktop.com/s/spring-tenancy/maven</url>
 				</repository>
 				<repository>
 					<id>EclipseLink Repo</id>
@@ -130,10 +130,10 @@
 		</dependency>
 	</dependencies>
 
-	<url>http://code2cloud.tasktop.com/alm/#projects/spring-tenancy</url>
+	<url>http://r.tasktop.com/#projects/spring-tenancy</url>
 	<issueManagement>
 		<system>Code2Cloud</system>
-		<url>http://code2cloud.tasktop.com/alm/#projects/spring-tenancy</url>
+		<url>http://r.tasktop.com/#projects/spring-tenancy</url>
 	</issueManagement>
 	<scm>
 		<developerConnection>git@github.com:SpringSource/spring-tenancy.git</developerConnection>
