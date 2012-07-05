@@ -35,7 +35,7 @@ import javax.sql.DataSource;
 public abstract class AbstractDatabaseSwitchingDataSource implements DataSource {
 
 	public static enum Language {
-		HSQL("SET SCHEMA ", "'"), MYSQL("USE ", "`"), ORACLE("ALTER SESSION SET CURRENT_SCHEMA=", "");
+		HSQL("SET SCHEMA ", "'"), MYSQL("USE ", "`"), ORACLE("ALTER SESSION SET CURRENT_SCHEMA=", "\"");
 
 		private final String switchCommand;
 		private final String quoteChar;
@@ -48,7 +48,7 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 		public String switchDatabase(String dbName) {
 			String query = switchCommand + quoteChar + dbName + quoteChar; 
 			if(this.name().equals(ORACLE.name())) {
-				return query;
+				return query.toUpperCase(); // REVIEW : do we really need to uppercase this
 			}
 			else {
 				return query + ";";
