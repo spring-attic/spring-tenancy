@@ -48,7 +48,7 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 		public String switchDatabase(String dbName) {
 			String query = switchCommand + quoteChar + dbName + quoteChar; 
 			if(this.name().equals(ORACLE.name())) {
-				return query.toUpperCase(); // REVIEW : do we really need to uppercase this
+				return query;
 			}
 			else {
 				return query + ";";
