@@ -56,8 +56,8 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 		}
 	};
 
-	private DataSource wrappedDataSource;
-	private Language language = Language.MYSQL;
+	protected DataSource wrappedDataSource;
+	protected Language language = Language.MYSQL;
 
 	public void setLanguage(Language l) {
 		this.language = l;
