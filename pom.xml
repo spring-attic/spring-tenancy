@@ -24,7 +24,7 @@
 				<repository>
 					<id>EclipseLink Repo</id>
 					<name>EclipseLink Repository</name>
-					<url>http://download.eclipse.org/rt/eclipselink/maven.repo</url>
+					<url>https://download.eclipse.org/rt/eclipselink/maven.repo</url>
 				</repository>
 			</repositories>
 		</profile>
@@ -34,7 +34,7 @@
 		<repository>
 			<id>EclipseLink Repo</id>
 			<name>EclipseLink Repository</name>
-			<url>http://download.eclipse.org/rt/eclipselink/maven.repo</url>
+			<url>https://download.eclipse.org/rt/eclipselink/maven.repo</url>
 		</repository>
 	</repositories>
 
@@ -130,14 +130,14 @@
 		</dependency>
 	</dependencies>
 
-	<url>http://r.tasktop.com/#projects/spring-tenancy</url>
+	<url>https://r.tasktop.com/#projects/spring-tenancy</url>
 	<issueManagement>
 		<system>Code2Cloud</system>
-		<url>http://r.tasktop.com/#projects/spring-tenancy</url>
+		<url>https://r.tasktop.com/#projects/spring-tenancy</url>
 	</issueManagement>
 	<scm>
 		<developerConnection>git@github.com:SpringSource/spring-tenancy.git</developerConnection>
-		<url>http://github.com/SpringSource/spring-tenancy</url>
+		<url>https://github.com/SpringSource/spring-tenancy</url>
 	</scm>
 
 	<build>
