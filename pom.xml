@@ -9,7 +9,7 @@
 	<name>Spring Multi-Tenancy Framework</name>
 
 	<properties>
-		<spring.framework.version>3.0.5.RELEASE</spring.framework.version>
+		<spring.framework.version>5.2.21.RELEASE</spring.framework.version>
 	</properties>
 
 	<profiles>
