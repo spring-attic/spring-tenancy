@@ -1,3 +1,3 @@
-h1. Spring Tenancy
+h1. Spring Tenancy is no longer actively maintained by VMware, Inc.
 
 Spring Tenancy provides a framework for managing multi-tenant approaches within a Spring-based application.
