@@ -21,7 +21,9 @@ package org.springframework.tenancy.datasource;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.SQLFeatureNotSupportedException;
 import java.sql.Statement;
+import java.util.logging.Logger;
 
 import javax.sql.DataSource;
 
@@ -76,6 +78,11 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 	@Override
 	public void setLogWriter(PrintWriter arg0) throws SQLException {
 		wrappedDataSource.setLogWriter(arg0);
+	}
+
+	@Override
+	public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+		return wrappedDataSource.getParentLogger();
 	}
 
 	@Override

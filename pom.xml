@@ -9,7 +9,7 @@
 	<name>Spring Multi-Tenancy Framework</name>
 
 	<properties>
-		<spring.framework.version>3.0.5.RELEASE</spring.framework.version>
+		<spring.framework.version>3.2.0.RELEASE</spring.framework.version>
 	</properties>
 
 	<profiles>
@@ -128,6 +128,12 @@
 			<version>2.0.0</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<url>http://r.tasktop.com/#projects/spring-tenancy</url>
@@ -146,8 +152,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.0.2</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 			   <plugin>
