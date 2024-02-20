@@ -20,6 +20,7 @@ package org.springframework.tenancy.datasource;
 
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -102,6 +103,9 @@ public abstract class AbstractDatabaseSwitchingDataSource implements DataSource 
 	protected Connection switchDatabase(Connection con) throws SQLException {
 		String databaseName = getDatabaseName();
 		if (databaseName != null) {
+			if (databaseName.contains(language.quoteChar)) {
+				throw new IllegalStateException("Database name ["+databaseName+"] contains the quote charecter");
+			}
 			Statement s = con.createStatement();
 			try {
 				s.execute(language.switchDatabase(databaseName));
